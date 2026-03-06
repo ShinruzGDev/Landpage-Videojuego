@@ -13,15 +13,10 @@ body{
     background-color: #788c98;
 }
 
-h1, h2, h3{
-    font-family: League Gothic, serif;
-    font-weight: 700; 
-    color: #2a2a2a;
-}
-
 a{
     text-decoration: none; /*esto quita el subrayado de los enlaces (creo)*/
-    color:#055351;
+    transition: color 0.3s ease;
+    color:#168480;
 }
 
 .container {
@@ -47,19 +42,124 @@ a{
 
 .site-header {
     padding: 1rem 0;
-    background-color: #22242d;
+    background-color: #0d0f19;
     border-bottom: 1px solid #08061b;
 }
 
 .main-nav ul {
+    justify-content: center;
     display: flex;
     list-style: none;
 }
 
 .main-nav li {
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 .main-nav a {
     font-weight: 700;
+}
+
+.main-nav a:hover {
+    color: #8bf8fc;
+}
+
+.lupi{
+    width: 20%;
+    padding: 20px;
+    margin-top: -200px;
+    margin-left: 10%;
+}
+
+.mia{
+    width: 20%;
+    padding: 15px;
+    margin-top: -200px;
+    margin-left: -140px;
+}
+
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('img/Enigma_do_Medo_-_Capa.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    color: #ffffff;
+    font-family: "Tagesschrift", system-ui;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#story, #menu, #contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#menu {
+    background-color: #ffffff;
+}
+
+.btn {
+    background-color: #0f746f;
+    color: #000000;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #15e2d8;
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.agatha{
+    width: 25%;
+    margin-left: -150px;
+    margin-top: -350px;
+    padding-bottom: 20px;
+}
+
+.site-footer {
+    background-color: #2a2a2a;
+    color: #f9f7f3;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -30px;
 }
